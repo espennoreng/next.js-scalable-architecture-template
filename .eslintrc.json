@@ -1,0 +1,36 @@
+{
+  "extends": ["next", "next/core-web-vitals", "eslint:recommended"],
+  "globals": {
+    "React": "readonly"
+  },
+  "ignorePatterns": ["postcss.config.js"],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "plugins": ["@typescript-eslint", "function-name", "check-file"],
+  "rules": {
+    "no-unused-vars": [1, { "args": "after-used", "argsIgnorePattern": "^_" }],
+    "arrow-body-style": ["error", "as-needed"],
+    "@typescript-eslint/no-unnecessary-condition": "error",
+    "@typescript-eslint/no-floating-promises": "error",
+    // Note: you must disable the base rule as it can report incorrect errors
+    "no-shadow": "off",
+    "@typescript-eslint/no-shadow": "error",
+    "function-name/starts-with-verb": "error",
+    "max-params": ["error", { "max": 3 }], // The “Clean Code Handbook” by Robert Martin
+    // Note: you must disable the base rule as it can report incorrect errors
+    "require-await": "off",
+    "@typescript-eslint/require-await": "error",
+    "no-nested-ternary": "error",
+    "check-file/filename-naming-convention": [
+      "error",
+      {
+        "app/components/**/*.{jsx,tsx,js,ts}": "PASCAL_CASE", // Every file inside 'components' in PascalCase
+        "app/**/*.{jsx,tsx,js,ts}": "KEBAB_CASE", // Every other file inside 'app' in kebab-case
+        "**/*.{jsx,tsx,js,ts}": "KEBAB_CASE" // Default rule for all other files
+      }
+    ],
+    "check-file/folder-naming-convention": ["error", { "app/**": "KEBAB_CASE" }] // Every folder inside 'app' in kebab-case
+  }
+}
