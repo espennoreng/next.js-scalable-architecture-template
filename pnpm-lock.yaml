@@ -35,8 +35,8 @@ devDependencies:
     specifier: ^6.11.0
     version: 6.11.0(@typescript-eslint/parser@6.11.0)(eslint@8.0.0)(typescript@5.0.2)
   autoprefixer:
-    specifier: ^10.0.1
-    version: 10.0.1(postcss@8.0.0)
+    specifier: ^10.4.16
+    version: 10.4.16(postcss@8.0.0)
   cross-env:
     specifier: ^7.0.3
     version: 7.0.3
@@ -836,8 +836,8 @@ packages:
       has-symbols: 1.0.3
     dev: true
 
-  /autoprefixer@10.0.1(postcss@8.0.0):
-    resolution: {integrity: sha512-aQo2BDIsoOdemXUAOBpFv4ZQa2DrOtEufarYhtFsK1088Ca0TUwu/aQWf0M3mrILXZ3mTIVn1lR3hPW8acacsw==}
+  /autoprefixer@10.4.16(postcss@8.0.0):
+    resolution: {integrity: sha512-7vd3UC6xKp0HLfua5IjZlcXvGAGy7cBAXTg2lyQ/8WpNhd6SiZ8Be+xm3FyBSYJx5GKcpRCzBh7RH4/0dnY+uQ==}
     engines: {node: ^10 || ^12 || >=14}
     hasBin: true
     peerDependencies:
@@ -845,9 +845,9 @@ packages:
     dependencies:
       browserslist: 4.22.1
       caniuse-lite: 1.0.30001562
-      colorette: 1.4.0
+      fraction.js: 4.3.7
       normalize-range: 0.1.2
-      num2fraction: 1.2.2
+      picocolors: 1.0.0
       postcss: 8.0.0
       postcss-value-parser: 4.2.0
     dev: true
@@ -1759,6 +1759,10 @@ packages:
       is-callable: 1.2.7
     dev: true
 
+  /fraction.js@4.3.7:
+    resolution: {integrity: sha512-ZsDfxO51wGAXREY55a7la9LScWpwv9RxIrYABrlvOFBlH/ShPnrtsXeuUIfXKKOVicNxQ+o8JTbJvjS4M89yew==}
+    dev: true
+
   /fs-extra@11.1.1:
     resolution: {integrity: sha512-MGIE4HOvQCeUCzmlHs0vXpih4ysz4wg9qiSAu6cd42lVwPbTM1TjV7RusoyQqMmk/95gdQZX72u+YW+c3eEpFQ==}
     engines: {node: '>=14.14'}
@@ -2645,10 +2649,6 @@ packages:
     engines: {node: '>=8'}
     dependencies:
       path-key: 3.1.1
-    dev: true
-
-  /num2fraction@1.2.2:
-    resolution: {integrity: sha512-Y1wZESM7VUThYY+4W+X4ySH2maqcA+p7UR+w8VWNWVAd6lwuXXWz/w/Cz43J/dI2I+PS6wD5N+bJUF+gjWvIqg==}
     dev: true
 
   /object-assign@4.1.1:
